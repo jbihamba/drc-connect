@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>DRC-Connect</title>
+            <link rel="icon" type="image/svg+xml" href="assets/drc_logo.svg">
+            <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        </head>
+        <body>
+            <header class="shadow-md sticky top-0 bg-white z-50">
+                <nav class="flex justify-between md:justify-between items-center p-4 border-b border-gray-300 max-w-7xl mx-auto">
+                    <div class="flex gap-4 items-center">
+                        <img src="assets/drc_logo.svg" alt="drc logo" class="h-10">
+                        <p class="text-xl font-bold text-[#003094]"><a href="index.html">DRC-connect</a></p>
+                    </div>
+                   <ul class="hidden md:flex">
+                         <li class="text-xl font-bold"><a href="#">Service</a></li>
+                   </ul>
+                    <ul class="flex hidden gap-4 md:flex items-center">
+                       
+                        <li class="text-xl font-bold"><a href="#">Sigin</a></li>
+                        <li class="bg-[#003094] text-white px-4 py-2 rounded-md"><a href="#">Create account</a></li>
+                    </ul>
+                    <!--menu mobile-->
+                   <button class="text-xl md:hidden" id="nav-mobile-toggle"><i class="bi bi-list"></i></button>
+                   <ul id="mobile-nav-menu" class="hidden flex-col gap-8 absolute top-16 right-4 bg-white border border-gray-300 shadow-md rounded-md p-8 w-full">
+                          <!--mobile menu items-->
+                          <li class="block w-full px-4 py-3 rounded-lg font-medium hover:bg-gray-100 transition"><a href="">Service</a></li>
+                          <li class="block w-full px-4 py-3 rounded-lg font-medium hover:bg-gray-100 transition"><a href="">Sign in</a></li>
+                          <li class="block text-center bg-[#003094] text-white px-4 py-3 rounded-lg font-semibold hover:bg-[#002070] transition"><a href="">Create account</a></li>
+                   </ul>
+                </nav>
+            </header>
+            <main>
+                <section class="p-4 text-center flex flex-col justify-center items-center gap-4 min-h-screen">
+                    <h1 class="border border-[#b6c4e0] bg-blue-100 text-blue-600 p-2 rounded-full">Welcome to DRC-connect</h1>
+                    <p class="text-3xl font-bold md:text-4xl md:w-3/5">Digital Government Services for the Democratic Republic of Congo</p>
+                    <p class="text-[#7487ad] text-xl">Apply for official documents and government services online. Fast, secure, and accessible.</p>
+                    <div class="flex flex-col justify-center sm:flex-row gap-4 ">
+                        <button class="bg-[#003094] text-white px-4 py-2 rounded-md hover:bg-blue-700">browser services <i class="bi bi-arrow-right"></i></button>
+                        <button class="border border-blue-600 text-blue-600 px-4 py-2 rounded-md hover:bg-blue-100">create account <i class="bi bi-arrow-right"></i></button>
+                    </div>
+                </section>
+
+                <!--section choose drc connect-->
+                <section class="bg-[#f5f6f6] min-h-[50vh] p-2 flex flex-col justify-center items-center gap-8">
+                    <h1 class="text-3xl font-bold text-center">Why choose DRC-connect?</h1>
+                    <p class="text-center text-[#7487ad] text-xl">Complete government services digitally with modern, secure platforms</p>
+
+                    <div class="flex flex-col md:flex-row flex-wrap justify-center items-stretch gap-4">
+
+                        <article class="bg-white p-4 rounded-md  flex flex-col items-start gap-4 shadow-md w-full md:w-80">
+                            <i class="bi bi-lightning-charge text-5xl text-[#003094]"></i>
+                            <h2 class="font-bold">Fast & Easy</h2>
+                            <p class="text-[#7487ad]">Apply for services from your home in minutes with our simple process</p>
+                        </article>
+                        
+                        <article class="bg-white p-4  rounded-md flex flex-col items-start gap-4 shadow-md w-full md:w-80">
+                            <i class="bi bi-shield-lock text-5xl text-[#003094]"></i>
+                            <h2 class="font-bold">Secure & Reliable</h2>
+                            <p class="text-[#7487ad]">Your data is encrypted and protected with government-grade security</p>
+                        </article>
+                        <article class="bg-white p-4  rounded-md flex flex-col items-start gap-4 shadow-md w-full md:w-80">
+                           <i class="bi bi-clock text-5xl text-[#003094]"></i>
+                            <h2 class="font-bold">Track Progress</h2>
+                            <p class="text-[#7487ad]">Monitor your applications in real-time and get instant updates</p>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="p-4 min-h-[50vh] flex flex-col justify-center items-center gap-8">
+                    <h1 class="text-3xl font-bold text-center">Available Services</h1>
+                    <p class="text-center text-[#7487ad]">Access a wide range of government services</p>
+                    <div class="flex flex-col md:flex-row justify-center items-stretch gap-4  max-w-5xl w-full">
+
+                        <div class="flex gap-4 border border-gray-300 p-4 rounded-xl flex-1">
+                            <i class="bi bi-person-badge text-5xl text-[#003094]"></i>
+                            <div class="flex-1">
+                                 <h2 class="font-bold">Identity Documents</h2>
+                                <p class="text-[#7487ad]">National ID, Passport, Birth Certificate.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4 border border-gray-300 p-4 rounded-xl flex-1">
+                            <i class="bi bi-car-front text-5xl text-[#003094]"></i>
+                            <div class="flex-1">
+                                <h2 class="font-bold">Transportation</h2>
+                                <p class="text-[#7487ad]">Driver License, Vehicle Registration.</p>
+                            </div>
+                         </div>
+                     </div>
+
+
+                     <div class="flex flex-col md:flex-row justify-center items-stretch gap-4  max-w-5xl w-full">
+
+                        <div class="flex gap-4 border border-gray-300 p-4 rounded-xl flex-1">
+                            <i class="bi bi-building text-5xl text-[#003094]"></i>
+                            <div class="flex-1">
+                                 <h2 class="font-bold">Business</h2>
+                                <p class="text-[#7487ad]">Business Registration, Licenses, Permits.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4 border border-gray-300 p-4 rounded-xl flex-1">
+                            <i class="bi bi-bank text-5xl text-[#003094]"></i>
+                            <div class="flex-1">
+                                <h2 class="font-bold">Finance</h2>
+                                <p class="text-[#7487ad]">Banking, Tax, Financial Services.</p>
+                            </div>
+                         </div>
+                     </div>
+                        <button class="bg-[#003094] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#002166] transition-colors">Explore All Services <i class="bi bi-arrow-right"></i></button>
+                </section>
+
+               <section class="bg-[#003094] p-8 min-h-[40vh] flex flex-col justify-center items-center gap-4">
+                     <h2 class="text-3xl text-white text-center">Get Started Today</h2>
+                     <p class="text-center text-white">Join thousands of citizens already using DRC-Connect to access government services online</p>
+                    <button class="bg-white text-[#003094] px-6 py-3 rounded-lg font-bold hover:bg-[#002166] transition-colors">Create Your Account <i class="bi bi-arrow-right"></i></button>
+                </section>
+                   
+                <div class="flex flex-col md:flex-row justify-center items-start gap-8 p-8 w-full max-w-7xl mx-auto">
+                    <div class="flex-1">
+                        <p class="text-xl font-bold">DRC-Connect</p>
+                        <span class="text-[#8a7f78]">Simplifying government services for citizens</span>
+                    </div>
+
+                    <div class="flex-1">
+                        <p class="text-xl font-bold">Services</p>
+                        <ul class="text-[#8a7f78]">
+                            <li><a href="#">Browse Services</a></li>
+                            <li><a href="#">Categories</a></li>
+                            <li><a href="#">FAQs</a></li>
+                           
+                        </ul>
+                    </div>
+
+                    <div class="flex-1">
+                        <p class="text-xl font-bold">Account</p>
+                        <ul class="text-[#8a7f78]">
+                            <li><a href="#">Sign</a></li>
+                            <li><a href="#">Create account</a></li>
+                            <li><a href="#">Help Center</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="flex-1">
+                        <p class="text-xl font-bold">Legal</p>
+                        <ul class="text-[#8a7f78]">
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </main>
+             <footer class="p-4 text-center text-[#8a7f78] border-t border-gray-300">
+              <p>&copy; 2026 DRC-connect. All rights reserved.</p>
+             </footer>
+
+             <script src="js/script.js"></script>
+        </body>
+</html>

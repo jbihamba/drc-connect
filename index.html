@@ -16,20 +16,20 @@
                         <p class="text-xl font-bold text-[#003094]"><a href="index.html">DRC-connect</a></p>
                     </div>
                    <ul class="hidden md:flex">
-                         <li class="text-xl font-bold"><a href="#">Service</a></li>
+                         <li class="text-xl font-medium"><a href="service.html">Service</a></li>
                    </ul>
                     <ul class="flex hidden gap-4 md:flex items-center">
                        
-                        <li class="text-xl font-bold"><a href="#">Sigin</a></li>
-                        <li class="bg-[#003094] text-white px-4 py-2 rounded-md"><a href="#">Create account</a></li>
+                        <li class="text-xl font-medium"><a href="login.html">Sign in</a></li>
+                        <li class="bg-[#003094] text-white px-4 py-2 rounded-md"><a href="register.html">Create account</a></li>
                     </ul>
                     <!--menu mobile-->
                    <button class="text-xl md:hidden" id="nav-mobile-toggle"><i class="bi bi-list"></i></button>
                    <ul id="mobile-nav-menu" class="hidden flex-col gap-8 absolute top-16 right-4 bg-white border border-gray-300 shadow-md rounded-md p-8 w-full">
                           <!--mobile menu items-->
-                          <li class="block w-full px-4 py-3 rounded-lg font-medium hover:bg-gray-100 transition"><a href="">Service</a></li>
-                          <li class="block w-full px-4 py-3 rounded-lg font-medium hover:bg-gray-100 transition"><a href="">Sign in</a></li>
-                          <li class="block text-center bg-[#003094] text-white px-4 py-3 rounded-lg font-semibold hover:bg-[#002070] transition"><a href="">Create account</a></li>
+                          <li class="block w-full px-4 py-3 rounded-lg font-medium hover:bg-gray-100 transition"><a href="service.html">Service</a></li>
+                          <li class="block w-full px-4 py-3 rounded-lg font-medium hover:bg-gray-100 transition"><a href="login.html">Sign in</a></li>
+                          <li class="block text-center bg-[#003094] text-white px-4 py-3 rounded-lg font-semibold hover:bg-[#002070] transition"><a href="register.html">Create account</a></li>
                    </ul>
                 </nav>
             </header>
@@ -39,8 +39,8 @@
                     <p class="text-3xl font-bold md:text-4xl md:w-3/5">Digital Government Services for the Democratic Republic of Congo</p>
                     <p class="text-[#7487ad] text-xl">Apply for official documents and government services online. Fast, secure, and accessible.</p>
                     <div class="flex flex-col justify-center sm:flex-row gap-4 ">
-                        <button class="bg-[#003094] text-white px-4 py-2 rounded-md hover:bg-blue-700">browser services <i class="bi bi-arrow-right"></i></button>
-                        <button class="border border-blue-600 text-blue-600 px-4 py-2 rounded-md hover:bg-blue-100">create account <i class="bi bi-arrow-right"></i></button>
+                        <button id="btn-browse-services" class="bg-[#003094] text-white px-4 py-2 rounded-md hover:bg-blue-700">browser services <i class="bi bi-arrow-right"></i></button>
+                        <button id="btn-create-account" class="border border-blue-600 text-blue-600 px-4 py-2 rounded-md hover:bg-blue-100">create account <i class="bi bi-arrow-right"></i></button>
                     </div>
                 </section>
 
@@ -111,13 +111,13 @@
                             </div>
                          </div>
                      </div>
-                        <button class="bg-[#003094] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#002166] transition-colors">Explore All Services <i class="bi bi-arrow-right"></i></button>
+                        <button onclick="window.location.href = 'service.html'" class="bg-[#003094] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#002166] transition-colors">Explore All Services <i class="bi bi-arrow-right"></i></button>
                 </section>
 
                <section class="bg-[#003094] p-8 min-h-[40vh] flex flex-col justify-center items-center gap-4">
                      <h2 class="text-3xl text-white text-center">Get Started Today</h2>
                      <p class="text-center text-white">Join thousands of citizens already using DRC-Connect to access government services online</p>
-                    <button class="bg-white text-[#003094] px-6 py-3 rounded-lg font-bold hover:bg-[#002166] transition-colors">Create Your Account <i class="bi bi-arrow-right"></i></button>
+                    <button onclick="window.location.href = 'register.html'" class="bg-white text-[#003094] px-6 py-3 rounded-lg font-bold hover:bg-[#002166] transition-colors">Create Your Account <i class="bi bi-arrow-right"></i></button>
                 </section>
                    
                 <div class="flex flex-col md:flex-row justify-center items-start gap-8 p-8 w-full max-w-7xl mx-auto">
@@ -129,9 +129,9 @@
                     <div class="flex-1">
                         <p class="text-xl font-bold">Services</p>
                         <ul class="text-[#8a7f78]">
-                            <li><a href="#">Browse Services</a></li>
-                            <li><a href="#">Categories</a></li>
-                            <li><a href="#">FAQs</a></li>
+                            <li><a href="service.html">Browse Services</a></li>
+                            <li><a href="categories.html">Categories</a></li>
+                            <li><a href="faq.html">FAQs</a></li>
                            
                         </ul>
                     </div>
@@ -139,9 +139,9 @@
                     <div class="flex-1">
                         <p class="text-xl font-bold">Account</p>
                         <ul class="text-[#8a7f78]">
-                            <li><a href="#">Sign</a></li>
-                            <li><a href="#">Create account</a></li>
-                            <li><a href="#">Help Center</a></li>
+                            <li><a href="login.html">Sign in</a></li>
+                            <li><a href="register.html">Create account</a></li>
+                            <li><a href="help.html">Help Center</a></li>
                         </ul>
                     </div>
 
@@ -160,5 +160,6 @@
              </footer>
 
              <script src="js/script.js"></script>
+             <script src="js/index.js"></script>
         </body>
 </html>

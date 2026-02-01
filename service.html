@@ -25,7 +25,7 @@
                     </ul>
                     <!--menu mobile-->
                    <button class="text-xl md:hidden" id="nav-mobile-toggle"><i class="bi bi-list"></i></button>
-                   <ul id="mobile-nav-menu" class="hidden flex-col gap-8 absolute top-16 right-4 bg-white border border-gray-300 shadow-md rounded-md p-8 w-full">
+                   <ul id="mobile-nav-menu" class="hidden flex-col gap-8 absolute top-16 right-0 bg-white border border-gray-300 shadow-md rounded-md p-8 w-full">
                           <!--mobile menu items-->
                           <li class="block w-full px-4 py-3 rounded-lg font-medium hover:bg-gray-100 transition"><a href="service.html">Service</a></li>
                           <li class="block w-full px-4 py-3 rounded-lg font-medium hover:bg-gray-100 transition"><a href="login.html">Sign in</a></li>
@@ -46,7 +46,8 @@
                        </div>
 
                        <p class="text-lg font-medium">Categories</p>
-                       <div class="flex flex-wrap gap-4">
+                       <div class="flex flex-wrap gap-4" id="categories">
+                            
                             <button class="bg-[#003094] text-white px-4 py-1 rounded-md hover:bg-blue-700">All services</button>
                             <button class="border border-gray-300 bg-white text-black px-4 py-1 rounded-md hover:bg-[#8d4c1d] font-medium">Identity</button>
                             <button class="border border-gray-300 bg-white text-black px-4 py-1 rounded-md hover:bg-[#8d4c1d] font-medium">Travel</button>
@@ -174,5 +175,6 @@
                     </section>
             </main>
             <script src="js/script.js"></script>
+            <script src="js/service.js"></script>
         </body>
 </html>
